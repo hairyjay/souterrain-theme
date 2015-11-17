@@ -494,22 +494,6 @@
                 {NoteCountWithLabel}
               </a>
               {/block:NoteCount}
-
-              {block:PermalinkPage}
-
-              {block:HasTags}
-              <ul class="tags">
-                {block:Tags}<li><a href="{TagURL}">#{Tag}</a> </li>{/block:Tags}
-              </ul>
-              {/block:HasTags}
-
-              {block:PostNotes}
-              <div class="post-notes">
-                {PostNotes}
-              </div>
-              {/block:PostNotes}
-
-              {/block:PermalinkPage}
             </div>
             {/block:Date}
             
@@ -638,6 +622,24 @@
               </div>
             </div>
             {/block:Answer}
+            <footer>
+
+              {block:PermalinkPage}
+
+              {block:HasTags}
+              <ul class="tags">
+                {block:Tags}<li><a href="{TagURL}">#{Tag}</a> </li>{/block:Tags}
+              </ul>
+              {/block:HasTags}
+
+              {block:PostNotes}
+              <div class="post-notes">
+                {PostNotes}
+              </div>
+              {/block:PostNotes}
+
+              {/block:PermalinkPage}
+            </footer>
           </article>
           {/block:Posts}
         </main>
