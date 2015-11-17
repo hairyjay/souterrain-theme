@@ -40,8 +40,12 @@
             /* Tumblr: Custom CSS */
             @import url(https://fonts.googleapis.com/css?family=Oswald:300);
             /* Tumblr: Customizable elements */
+            html {
+                max-width: 100%;
+            }
             body {
                 font-family: {font:Body};
+                max-width: 100%;
                 overflow-x: hidden;
             }
             h1, h2, h3, h4, h5, h6 {
@@ -54,13 +58,14 @@
             .line {
                 background-color: {color:Line color};
                 position: fixed;
+                top: 0;
                 left: 15%;
                 width: 30px;
                 margin: 0 0 0 5px;
                 height: 150%;
             }
             .masthead {
-                padding: 10px;
+                padding: 0;
                 margin: 0 0 {text:Masthead margin}px 0;
             }
             .searchbox {
@@ -103,7 +108,7 @@
                 height: 30px;
                 background-color: {color:Navbar color};
                 overflow: hidden;
-                width: 100%;
+                width: 85%;
                 margin: 20px 0 0 15%;
                 padding: 0 30px 0 5px;
                 text-align: right;
